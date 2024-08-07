@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hamzaban 1.0\n"
+"POT-Creation-Date: 2024-08-07 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+
+#: hamzaban.php:13
+msgid "Languages"
+msgstr ""
+
+#: hamzaban.php:62 hamzaban.php:136 hamzaban.php:165
+msgid "Hreflang URL"
+msgstr ""
+
+#: hamzaban.php:63 hamzaban.php:137 hamzaban.php:166
+msgid "Input your hreflang URL"
+msgstr ""
+
+#: hamzaban.php:64 hamzaban.php:138 hamzaban.php:167
+msgid "Language"
+msgstr ""
+
+#: hamzaban.php:68 hamzaban.php:141
+msgid "Remove"
+msgstr ""
+
+#: hamzaban.php:74 hamzaban.php:144
+msgid "Add Hreflang"
+msgstr ""
+
+#: hamzaban.php:214
+msgid "Hamzaban Settings"
+msgstr ""
+
+#: hamzaban.php:215
+msgid "Hamzaban"
+msgstr ""
+
+#: hamzaban.php:221
+msgid "Settings saved"
+msgstr ""
+
+#: hamzaban.php:251
+msgid "Default Language"
+msgstr ""
