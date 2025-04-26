@@ -2,15 +2,33 @@
 /*
 Plugin Name: Hamzaban
 Description: Hamzaban Hreflang Tag Manager
-Author: Ertano
-Version: 1.0
-Author URI: https://ertano.com
-Plugin URI: https://ertano.com/hamzaban/
+Author: MihanWp
+Version: 1.1
+Author URI: https://mihanwp.com
+Plugin URI: https://mihanwp.com/hamzaban/
 Text Domain: hamzaban
 Domain Path: /languages
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
+
+function hamzaban_handleUpdater()
+{
+    include plugin_dir_path(__FILE__) . 'mihanwpUpdater.php';
+    $plugin_data = get_file_data(__FILE__, array('Version' => 'Version'), false);
+    $plugin_version = $plugin_data['Version'];
+    
+    $updaterArgs = [
+        'base_api_server' => 'https://mihanwp.com',
+        'license_key' => 'free',
+        'item_id' => 1152555,
+        'current_version' => $plugin_version,
+        'plugin_slug' => plugin_basename(__FILE__),
+        'license_status' => true,
+    ];
+    \HamZaban\mihanwpUpdater::init($updaterArgs);
+}
+add_action('plugins_loaded', 'hamzaban_handleUpdater');
 
 function hamzaban_load_textdomain() {
     load_plugin_textdomain('hamzaban', false, dirname(plugin_basename(__FILE__)) . '/languages');
